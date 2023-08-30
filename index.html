@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+                   FUNCTION
+     1.Function là gì?
+     - tập hợp các câu lệnh dùng để xử lý 1 chức năng duy nhât
+     - hàm có khả năng tái sử dụng( viết 1 lần gọi nhiều lần)
+     - giúp code gọn gàng hơn
+     2.Các loại function?
+      - 1.function bình thường ( declaration)
+      - 2.expression function
+      - 3.Arrow function(hàm mũi tên)
+     3.Return trong hàm?
+      - 1. 1 hàm khi gặp return sẽ dừng ctrinh luôn
+      - kết quả trả về của hàm
+     4.tham số,đối số trong hàm
+       + đối sô : argument( là cái truyền vào khi gọi hàm)
+       + tham số :param (tham số nhận về )
+     5.đệ quy trong hàm
+      - hàm tự gọi là chính nó
+     6.call back( hàm gọi hàm)  
+     - hàm được truyền vào làm đối số của hàm khác            
+     -->
+
+
+     <script>
+        // function showHello() {
+        //     console.log("xin chào");
+        // }
+        // function tinhTong(){
+        //     showHello()
+        //     console.log("hello!");
+        // }
+        // tinhTong()
+
+        // result()
+        // 
+        // let arr=["hoa","hồng","đào","bưởi"];
+        // function randerStudent(a) {
+        //     console.log("a",a);
+        // }
+        // randerStudent(arr);
+        // function deleteStudent() {
+        //     arr.splice(0,1);
+        //     randerStudent(arr);
+        // }
+
+
+
+        // let a= +prompt("mời bạn nhập số thứ nhất");
+        // let b= +prompt("mời bạn nhập số thứ hai");
+
+        // function tongHaiSo(param1,pram2) {
+        //     let total =a+b;
+        //     for (let i = param1; i <=pram2 ; i++) {
+        //         total+=i;
+        //     }
+        //     console.log(total);
+        // }
+        // tongHaiSo(a,b)
+
+
+
+        // function deQuy(a) {
+        //     if (a==1) {
+        //         return 0;
+        //     }
+        //     return a+deQuy(--a)
+        // }
+        //  console.log(deQuy(5));
+
+        // let sđt;
+        // function xinSoDt(callback) {
+        //     console.log("lộc gọi cho Dương xin số Tươi");
+        //     console.log("Dương bảo đợi e tí");
+        //     setTimeout(() =>{
+        //         sđt="012345";
+        //         callback(sđt)
+        //     }, 3000);
+        // }
+
+        // function daCoSoMoiGoi(sdtTuoi) {
+        //     console.log(`gọi cho Tươi ${sđtTuoi}`);
+        // }
+        // xinSoDt(daCoSoMoiGoi);
+    //  result()
+    //  let result = function create(){
+    //     console.log("111");
+    //  }
+    
+
+        function check(a) {
+
+        if(a==2) return;
+
+        return a * check(a-1);
+
+        }
+
+        let result=check(4)
+
+        console.log(result);
+     
+    
+
+       
+     </script>
+</body>
+</html>
